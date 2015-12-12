@@ -1,0 +1,15 @@
+<!-- <h2>{{ title }}</h2>
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="dog in dogs">
+    	<a ui-sref="dogDescription({ dogId: {{ dog.id }}, dogPlace: 'Dhaka' })">{{ dog.name}}</a>
+    </li> 
+</ul> -->
+
+<h2>Model Listing</h2>
+
+<ul class="list-group">
+	<li class="list-group-item" ng-repeat = "item in datas.makes">		
+			<h4><a ui-sref="dogDescription({ dogId: {{ item.id }}, dogPlace: 'Dhaka' })">{{ item.name }}</a></h4>
+			<p>Model ID: {{ item.id}}, Nickname: {{ item.niceName }}</p>
+	</li>
+</ul>
